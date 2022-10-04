@@ -8,7 +8,7 @@
     <title>Manage Landing Page</title>
 </head>
 <body>
-    <! ----- Navbar ----->
+    <!----- Navbar----->
     <nav class="relative container mx-auto p-6">
         <div class="flex items-center justify-between">
             <!--- Logo -->
@@ -36,8 +36,8 @@
     <!---- Hero Section  ---->
     <section id="hero">
         <!-- Flex Container-->
-        <div class="container flex flex-col-reverse md:flex-row items-center 
-                    px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+        <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 
+                    space-y-0 md:space-y-0 md:flex-row">
             <!-- Left item -->
             <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
                 <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
@@ -235,33 +235,71 @@
             <!-- Logo and social links container -->
             <div class="flex flex-col-reverse items-center justify-between 
                         space-y-12 md:flex-col md:space-y-0 md:items-start">
+                <div class="mx-auto my-6 text-center text-white md:hiddent">
+                    Copyright &copy; 2022, All Rights Reserved
+                </div>
                 <!-- Logo -->
-                <div class="pt-2 py-2 rounded-full">
-                    <img class="object-scale-down h-10 w-10" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE-7gX_AAd5TCh8wxkWH0RYFB8kJLoTieHcg&usqp=CAU" alt="" />
+                <div class="pt-2 py-6 rounded-full">
+                    <img class="object-scale-down h-10 w-10 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE-7gX_AAd5TCh8wxkWH0RYFB8kJLoTieHcg&usqp=CAU" alt="" />
                 </div>
 
                 <!-- Social Links Container -->
                 <div class="flex justify-center space-x-4">
-                    <a href="">
-                        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png" class="h-8 bg-white" alt="">
+                    <a href="#">
+                        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png" class="h-8 bg-white rounded-full" alt="">
                     </a>
-                    <a href="">
-                        <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_youtube-512.png" class="h-8 bg-white" alt="">
-                    </a>
-
-                    <a href="">
-                        <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" class="h-8 bg-white" alt="">
+                    <a href="#">
+                        <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_youtube-512.png" class="h-8 bg-white rounded-full" alt="">
                     </a>
 
-                    <a href="">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" class="h-8 bg-white" alt="">
+                    <a href="#">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" class="h-8 bg-white rounded-full" alt="">
                     </a>
 
-                    <a href="">
-                        <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" class="h-8 bg-white" alt="">
+                    <a href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" class="h-8 bg-white rounded-full" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" class="h-8 bg-white rounded-full" alt="">
                     </a>
                 </div>
 
+            </div>
+
+            <!-- List Container -->
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:text-brightRed">Home</a>
+                    <a href="#" class="hover:text-brightRed">Pricing</a>
+                    <a href="#" class="hover:text-brightRed">Products</a>
+                    <a href="#" class="hover:text-brightRed">About</a>
+                </div>
+
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:text-brightRed">Careers</a>
+                    <a href="#" class="hover:text-brightRed">Community</a>
+                    <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+                </div>
+            </div>
+
+            <!-- Input Container -->
+            <div class="flex flex-col justify-between">
+                <form action="">
+                    <div class="flex space-x-3">
+                        <input type="text" class="flex-1 px-4 rounded-full focus:outline-none"
+                            placeholder="Updated in your inbox"
+                        >
+                        <button class="px-6 py-2 text-white rounded-full
+                                bg-brightRed hover:bg-brightRedLight focus:outline-none">
+                            Go
+                        </button>
+                    </div>
+                </form>
+
+                <div class="hidden text-white md:block">
+                    Copyright &copy; 2022, All Rights Reserved
+                </div>
             </div>
         </div>
     </footer>
